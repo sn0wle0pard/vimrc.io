@@ -1,0 +1,248 @@
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  background-color: #3F3F3F;
+  border-bottom: 1px solid #262626;
+  margin-top: -1px;
+}
+
+.nav-logo {
+  padding-left: 1rem;
+}
+
+.nav-logo img {
+  height: 3rem;
+}
+.menubar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 200px;
+  background-color: #3F3F3F;
+  border-top: 1px solid #505050;
+  border-right: 1px solid #505050;
+}
+
+.menubar-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.sitemap > ul {
+  padding: 0;
+}
+
+.sitemap > ul > li {
+  list-style: none;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.sitemap > ul > li > a {
+  font-size: 1.1rem;
+  color: #BBB;
+  text-decoration: none;
+}
+.option-item {
+  padding: 1rem;
+  border-bottom: 1px solid #505050;
+}
+
+.option-name {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+.option-info {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.option-default {
+  color: #fb4934;
+  margin: .5rem 0 0 0;
+  word-break: break-all;
+}
+
+/* came from https://github.com/olton/Metro-UI-CSS/blob/master/less/inputs.less */
+.switch-original {
+  margin: 0 .625rem 0 0;
+  display: inline-block;
+}
+
+.switch-original input {
+  position: absolute;
+  opacity: 0;
+  width: 0.0625rem;
+  height: 0.0625rem;
+}
+
+.switch-original .check, .switch-original .caption {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 18px;
+}
+
+.switch-original .caption {
+  margin: 0 5px;
+}
+
+.switch-original .check {
+  position: relative;
+  height: 1.125rem;
+  width: 2.8125rem;
+  outline: 2px #a6a6a6 solid;
+  border: 1px #fff solid;
+  cursor: pointer;
+  background: #A6A6A6;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.switch-original .check:after {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  display: block;
+  content: "";
+  height: 1rem;
+  width: .5625rem;
+  outline: 2px #494949 solid;
+  border: 1px #494949 solid;
+  cursor: pointer;
+  background: #494949;
+  z-index: 2;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.switch-original input[type="checkbox"]:focus ~ .check {
+  outline: 1px #999999 dotted;
+}
+
+.switch-original input[type="checkbox"]:checked ~ .check {
+  background: #008287;
+}
+
+.switch-original input[type="checkbox"]:checked ~ .check:after {
+  left: auto;
+  -webkit-transform: translateX(2rem);
+      -ms-transform: translateX(2rem);
+          transform: translateX(2rem);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.switch-original input[type="checkbox"]:disabled ~ .check {
+  background-color: #e6e6e6;
+  border-color: #FFF;
+}
+
+.switch-original input[type="checkbox"]:disabled ~ .check:after {
+  background-color: #494949;
+  outline-color: #494949;
+  border-color: #494949;
+}
+.option-group {
+  list-style: none;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.option-group > li > h2 {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0;
+  border-bottom: 1px solid #505050;
+}
+
+.option-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+pre {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-top: 1px solid #505050;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background: none !important;
+  border-left: 1px solid #505050;
+  font-size: 1.5rem;
+}
+.main {
+  height: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100% - 5rem);
+  overflow: hidden;
+}
+
+.option {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-top: 1px solid #505050;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.os-select {
+  cursor: pointer;
+}
+
+.os-select > img {
+  width: 25%;
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #242424;
+  color: #FFF;
+}
+
+#root {
+  height: 100%;
+}
+
+/*# sourceMappingURL=main.d215f5e3.css.map*/
