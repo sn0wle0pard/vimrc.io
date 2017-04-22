@@ -20,6 +20,21 @@
 .nav-logo img {
   height: 3rem;
 }
+.sitemap > ul {
+  padding: 0;
+}
+
+.sitemap > ul > li {
+  list-style: none;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.sitemap > ul > li > a {
+  font-size: 1.1rem;
+  color: #BBB;
+  text-decoration: none;
+}
 .menubar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -57,22 +72,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
-}
-
-.sitemap > ul {
-  padding: 0;
-}
-
-.sitemap > ul > li {
-  list-style: none;
-  padding-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.sitemap > ul > li > a {
-  font-size: 1.1rem;
-  color: #BBB;
-  text-decoration: none;
 }
 .option-item {
   padding: 1rem;
@@ -271,4 +270,4 @@ html, body {
   height: 100%;
 }
 
-/*# sourceMappingURL=main.a23c3cfd.css.map*/
+/*# sourceMappingURL=main.9e7a160c.css.map*/
